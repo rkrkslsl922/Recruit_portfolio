@@ -199,7 +199,7 @@ body.editing .hero-in,body.editing main{outline:2px dashed var(--peri-deep);outl
 var regions = [document.querySelector(".hero-in"), document.querySelector("main"), document.querySelector(".close-card")];
 var editBtn = document.getElementById("editBtn"), pdfBtn = document.getElementById("pdfBtn");
 var editing = false;
-var STORE_KEY = "proposal_edits_v1";
+var STORE_KEY = "proposal_edits_v2";
 function saveEdits(){
   try{ localStorage.setItem(STORE_KEY, JSON.stringify(regions.map(function(r){ return r ? r.innerHTML : null; }))); }catch(e){}
 }
